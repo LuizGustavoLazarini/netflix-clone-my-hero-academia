@@ -1,0 +1,171 @@
+/* raiz para facilitar paleta de cores para futuros testes*/
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+    --azul:#0d0397;
+    --amarelo:#fbff19;
+    --cinza:rgb(201, 201, 201);
+    --branco:rgb(255, 255, 255);
+
+}
+/* ajuste geral da pagina*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+   background:rgb(0, 0, 0);
+   font-family: 'Arial', Times, serif;
+   color:white;
+}
+
+/* menu dos container*/
+header .containermenu{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.botaomenu{
+    background-color: rgba(78, 255, 72, 0.534);
+    border:none;
+    color: rgb(241, 238, 13);
+
+    padding:10px 20px;
+    margin-right: 10px;
+    font-size: 15px;
+
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.botaomenu:hover{
+    background-color: rgb(0, 0, 0);
+    color:rgba(197, 195, 195, 0.774);
+}
+
+.botaomenu i{
+    margin-right: 4px;
+}
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+/* trabalha com logo */
+header .logo{
+    margin-left: 10px;
+    color: rgb(29, 13, 245);
+    font-family: 'Arial Black', Times;
+    font-size:40px;
+}
+
+/* muda o menu quando se passa o mouse em cima*/
+header nav a{
+    text-decoration:none;
+    color: rgb(169, 172, 22);
+    margin-right: 10px;
+}
+
+
+header nav a:hover{
+    color:#fff;
+}
+
+
+
+/*filme principal*/
+.filme-principal{
+    
+    background: transparent url("../MHA/bokuheroacademia2.gif") no-repeat scroll 10px 10px;
+    /*background: url("../img/bokuheroacademia2.gif") no-repeat scroll 10px 10px;*/
+    /*background: linear-gradient(rgba(109, 108, 108, 0.5),rgba(138, 135, 135, 0.733)50%) transparent url("../img/bokuheroacademia2.gif") no-repeat scroll 10px 10px;*/
+    height: 700px;
+    background-size: cover;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal{
+    font-size:14px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+.filme-principal .titulo{
+    margin-top: 350px;
+    margin-right: 800px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-left: 15px;
+    color: rgb(245, 13, 13);
+    font-size:50px;
+}
+
+.filme-principal .descricao{
+    margin-top: 30px;
+    margin-right: 30px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-left: 35px;
+    color: rgb(5, 226, 255);
+    font-size:25px;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color:white;
+
+    padding: 10px 30px;
+    margin-right: 15px;
+    margin: 10px;
+    font-size: 14px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color:white;
+    color:black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+
+.container{
+    margin-left: 20px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.container{
+    margin-left:50px;
+}
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.carrosel-filmes{
+    margin: 20px;
+    margin-top:15px;
+    justify-content: center;
+}
+.titulo{
+    margin-top: 10px;
+    justify-content: center;
+}
